@@ -1,4 +1,4 @@
-package com.uallessonivo.util;
+package com.uallessonivo.springbootcourse.common;
 
 import org.springframework.stereotype.Component;
 

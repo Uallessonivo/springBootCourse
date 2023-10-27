@@ -1,7 +1,8 @@
 package com.uallessonivo.springbootcourse.rest;
 
-import com.uallessonivo.util.Coach;
+import com.uallessonivo.springbootcourse.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,8 +12,9 @@ public class DemoController {
     private Coach myCoach;
 
     // define a constructor for dependency injection
+    // The qualifier is used to specify which bean to use
     @Autowired
-    public DemoController(Coach theCoach) {
+    public void setCoach(@Qualifier("baseballCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
