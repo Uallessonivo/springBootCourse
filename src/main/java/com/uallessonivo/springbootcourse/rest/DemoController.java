@@ -1,5 +1,6 @@
-package com.uallessonivo.springbootcourse;
+package com.uallessonivo.springbootcourse.rest;
 
+import com.uallessonivo.util.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.uallessonivo.springbootcourse;
+package com.uallessonivo.util;
 
 public interface Coach {
     String getDailyWorkout();
