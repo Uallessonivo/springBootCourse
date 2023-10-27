@@ -12,9 +12,9 @@ public class DemoController {
     private Coach myCoach;
 
     // define a constructor for dependency injection
-    // The qualifier is used to specify which bean to use
     @Autowired
-    public void setCoach(@Qualifier("baseballCoach") Coach theCoach) {
+    public void setCoach(@Qualifier("cricketCoach") Coach theCoach) {
+        System.out.println("In constructor: " + getClass().getSimpleName());
         myCoach = theCoach;
     }
 
